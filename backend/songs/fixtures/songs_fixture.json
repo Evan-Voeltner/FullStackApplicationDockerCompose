@@ -1,0 +1,35 @@
+[
+    {
+        "model": "songs.song",
+        "pk": 1,
+        "fields": {
+            "title": "The Bottom of It",
+            "artist": "Fruit Bats",
+            "album": "Gold Past Life",
+            "release_date": "2019-10-14",
+            "genre": "Alternative/Indie"
+        }
+    },
+    {
+        "model": "songs.song",
+        "pk": 2,
+        "fields": {
+            "title": "Merged in Dreams - Ne Plus Ultra",
+            "artist": "Elder",
+            "album": "Innate Passage",
+            "release_date": "2022-04-27",
+            "genre": "Rock/Indie"
+        }
+    },
+    {
+        "model": "songs.song",
+        "pk": 3,
+        "fields": {
+            "title": "The Crane Wife 3",
+            "artist": "The Decemberists",
+            "album": "The Crane Wife",
+            "release_date": "2006-02-08",
+            "genre": "Alternative/Indie"
+        }
+    }
+]
