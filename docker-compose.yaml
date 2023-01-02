@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  music-library-database:
+    build: ./database
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    restart: always
+  music-library-backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    restart: always
+    depends_on:
+      - "music-library-database"
+    command: >
+      sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py loaddata songs_fixture && python manage.py runserver 0.0.0.0:8000"
