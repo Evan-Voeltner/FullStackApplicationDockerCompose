@@ -8,7 +8,7 @@ django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 tzdata = "*"
-mysql-connector-python = "==8.0.26"
+mysql-connector-python = "*"
 
 [dev-packages]
 
